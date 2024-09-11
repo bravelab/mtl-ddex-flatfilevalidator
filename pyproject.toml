@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mtl_ddex_flatfilevalidator"
+version = "0.1.0"
+description = "A tool to check conformance of a DSRF file"
+authors = ["Mariusz Smenżyk <mariusz@bravelab.io>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+six = "^1.16.0"
+protobuf = "^5.28.1"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dsrf-conf = "mtl_ddex_flatfilevalidator.dsrf_conf_checker:main"
